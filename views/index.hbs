@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
     <head>
       <meta charset="UTF-8">
@@ -18,60 +17,69 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-	<header>
-
-	</header>
 
 	<main>
 		<div class="section valign-wrapper center" id="leftContainer">
-			<div class="row miniContainer">
-				<h1>UdaBuddy</h1><br>
+		    <div class="bg-image"></div>
+                    <ul class="sidenav" id="mobile-demo">
+                      <li><a href="/about">About</a></li>
+                      <li><a href="javascript:void(0)">Terms</a></li>
+                      <li><a href="javascript:void(0)">Developers</a></li>
+                    </ul>
+            <nav id="indexHeader">
+                    <div class="nav-wrapper">
+                      <a href="#" class="brand-logo">UdaBuddy</a>
+                      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                      <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/blogDemo">Blog</a></li>
+                        <li><a href="/wof">Wall of Fame</a></li>
+                      </ul>
+                    </div>
+            </nav>
+            <ul class="sidenav" id="mobile-demo">
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/blogDemo">Blog</a></li>
+              <li><a href="/wofDemo">Wall of Fame</a></li>
+            </ul>
+			<div class="miniContainer miniContainerBanner">
 				<h4>A Platform for Udacity Students and Alumni</h4><br>
-				<h5>Create, Share & Learn. Together !</h5>
+				<h5>Create, Share & Learn Together !</h5>
+				<p class="quote hide-on-small-only show-on-medium-and-up">
+                   Coming together is a beginning; keeping together is progress; working together is Success. - Edward Everett Hale
+
+                 </p>
+
 			</div>
+			<footer class="page-footer-index hide-on-small-only show-on-medium-and-up">
+            		<div class="container">
+            			<div class="row">
+            			    <div class="col m12 s12" id="copyright">
+            				  <span id="copy"> &copy;2018 Udabuddy.</span>
+            			    </div>
+            			</div>
+            		</div>
+                </footer>
 		</div>
 		<div class="section valign-wrapper center" id="rightContainer">
 			<div class="row miniContainer">
-				<div id="rightText1">See what’s developing right now</div><br><br>
-        <div class="sign-in-container">
-          <div id="rightText2">
-            <blockquote>Join Udabuddy</blockquote>
-          </div>
-          <div id="firebaseui-auth-container"></div>
-        </div>
+				<div id="rightText1">Sign in to your account</div><br><br>
+                <div class="sign-in-container">
+                  <div id="firebaseui-auth-container"></div>
+                </div>
 			</div>
 		</div>
 
 	</main>
-
-    <footer class="page-footer blue lighten-2 center">
-		<div class="container">
-			<div class="row">
-			    <div class="col m6 s12" id="copyright">
-					Created By
-					<a class="black-text text-lighten-3" id="teamStyle" href="#">
-						<b> UdaBuddy Team</b>
-					</a>
-				  <span id="copy"> &copy;2018</span>
-			    </div>
-				<div class="col m2 s12">
-					<a class="black-text text-lighten-3" href="#">
-						<b>About</b>
-					</a>
-				</div>
-				<div class="col m2 s12">
-					<a class="black-text text-lighten-3" href="#">
-						<b>Developers</b>
-					</a>
-				</div>
-				<div class="col m2 s12 ">
-					<a class="black-text text-lighten-3" href="#">
-						<b>Terms</b>
-					</a>
-				</div>
-			</div>
-		</div>
-    </footer>
+  <footer class="page-footer white center-align black-text show-on-small hide-on-med-and-up">
+    <div class="container">
+        <div class="row">
+            <div class="col m12 s12" id="copyright">
+              <span id="copy"> &copy;2018 Udabuddy.</span>
+            </div>
+        </div>
+    </div>
+  </footer>
 
   <!--  Scripts-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
